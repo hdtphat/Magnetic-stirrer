@@ -1,0 +1,148 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.37.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Phat Hoang Tien, hcmc university of technology and education, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.37.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.18
+Assembler:       Armasm.exe V6.18
+Linker/Locator:  ArmLink.exe V6.18
+Library Manager: ArmAr.exe V6.18
+Hex Converter:   FromElf.exe V6.18
+CPU DLL:         SARMCM3.DLL V5.37.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.56.1.0
+ 
+<h2>Project:</h2>
+C:\Users\Hoang Tien Phat\Desktop\6 timing\final.uvprojx
+Project File Date:  12/15/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.18', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+MAX7219.c(3): warning: In file included from...
+./spi1.h(19): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+1 warning generated.
+compiling MAX7219.c...
+main.c(2): warning: In file included from...
+./main.h(17): warning: no previous extern declaration for non-static variable 'PWM_DuttyCycle' [-Wmissing-variable-declarations]
+double PWM_DuttyCycle = 0;
+       ^
+./main.h(17): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+double PWM_DuttyCycle = 0;
+^
+./main.h(18): warning: no previous extern declaration for non-static variable 'Encoder_Count' [-Wmissing-variable-declarations]
+uint32_t Encoder_Count = 0;
+         ^
+./main.h(18): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t Encoder_Count = 0;
+^
+./main.h(19): warning: no previous extern declaration for non-static variable 'Motor_Speed' [-Wmissing-variable-declarations]
+uint32_t Motor_Speed = 0;
+         ^
+./main.h(19): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t Motor_Speed = 0;
+^
+./main.h(20): warning: no previous extern declaration for non-static variable 'MODE' [-Wmissing-variable-declarations]
+uint8_t MODE = 0;
+        ^
+./main.h(20): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint8_t MODE = 0;
+^
+./main.h(21): warning: no previous extern declaration for non-static variable 'Count' [-Wmissing-variable-declarations]
+uint8_t Count = 0;
+        ^
+./main.h(21): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint8_t Count = 0;
+^
+./main.h(22): warning: no previous extern declaration for non-static variable 'Time' [-Wmissing-variable-declarations]
+uint32_t Time = 0, Previous_Time = 0;
+         ^
+./main.h(22): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t Time = 0, Previous_Time = 0;
+^
+./main.h(22): warning: no previous extern declaration for non-static variable 'Previous_Time' [-Wmissing-variable-declarations]
+uint32_t Time = 0, Previous_Time = 0;
+                   ^
+./main.h(22): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t Time = 0, Previous_Time = 0;
+^
+main.c(3): warning: In file included from...
+./spi1.h(19): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+8 warnings generated.
+compiling main.c...
+spi1.c(2): warning: In file included from...
+./spi1.h(19): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+spi1.c(60): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+        uint32_t clear_flag = SPI1->DR;
+                 ^
+spi1.c(60): warning: variable 'clear_flag' set but not used [-Wunused-but-set-variable]
+spi1.c(72): warning: implicit conversion loses integer precision: 'volatile uint16_t' (aka 'volatile unsigned short') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+                *RX_data_array++ = (SPI1->DR);
+                                 ~  ~~~~~~^~
+spi1.c(87): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+        uint32_t clear_flag = SPI1->DR;
+                 ^
+spi1.c(87): warning: variable 'clear_flag' set but not used [-Wunused-but-set-variable]
+6 warnings generated.
+compiling spi1.c...
+assembling startup_stm32f10x_md.s...
+RTE/Device/STM32F103C8/system_stm32f10x.c(166): warning: no previous extern declaration for non-static variable 'AHBPrescTable' [-Wmissing-variable-declarations]
+__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+            ^
+RTE/Device/STM32F103C8/system_stm32f10x.c(166): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+    ^
+1 warning generated.
+compiling system_stm32f10x.c...
+linking...
+Program Size: Code=5712 RO-data=252 RW-data=0 ZI-data=1664  
+FromELF: creating hex file...
+".\Objects\final.axf" - 0 Error(s), 16 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil.STM32F1xx_DFP.2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/Device/STM32F103C8
+  ./RTE/_Target_1
+  C:/Users/Hoang Tien Phat/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/Hoang Tien Phat/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device/Source/ARM/startup_stm32f10x_md.s
+      Source file:   Device/Source/system_stm32f10x.c
+      Source file:   Device/Source/ARM/STM32F1xx_OPT.s
+      Include file:  RTE_Driver/Config/RTE_Device.h
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
